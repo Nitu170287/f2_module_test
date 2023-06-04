@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url("./images/background.png");
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a493c0;
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav>ul {
+    display: inline;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 5px 0 5px;
+}
+
+.order {
+    width: 100%;
+    text-align: center;
+}
+
+.order_btn {
+    background-color: #f6aeae;
+    padding: 10px;
+    border: solid 1px #f6aeae;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 10px;
+
+}
+
+#container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 40px;
+
+
+}
+
+#container>div>img:hover {
+    transform: scaleX(1.04);
+    border-radius: none;
+}
+
+#container>div {
+    height: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+}
+
+#container>div>img {
+    width: 300px;
+    height: 70%;
+    border-radius: 5px;
+    transition: 0.1s;
+
+}
+
+.name_price {
+    display: flex;
+    justify-content: space-between;
+}
